@@ -34,8 +34,8 @@ namespace MyPro
             else
             {
 
-                textBox2.Text = ConvertToGlish(textBox1.Text);
                 button2.Enabled = true;
+                textBox2.Text = ConvertToGlish(textBox1.Text);
                 
             }
         }
@@ -62,6 +62,11 @@ namespace MyPro
             }
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -74,10 +79,7 @@ namespace MyPro
                 button2.Enabled = false;
                 textBox2.Clear();
             }
-            else
-            {
-                button2.Enabled = true;
-            }
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
